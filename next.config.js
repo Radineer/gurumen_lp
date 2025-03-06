@@ -6,6 +6,7 @@ const nextConfig = {
   },
   basePath: '/gurumen_lp',  // リポジトリ名に合わせて変更してください
   assetPrefix: '/gurumen_lp/', // リポジトリ名に合わせて変更
+  trailingSlash: true,
 }
 
 module.exports = nextConfig 
