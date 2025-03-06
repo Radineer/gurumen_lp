@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# グルメン LP
 
-## Getting Started
+グルメンは、SNSを活用した飲食店PRに特化したコミュニティプラットフォームです。
 
-First, run the development server:
+## 🌟 特徴
 
+- SNSスキルの向上支援
+- 実践的なPRプロジェクトへの参加
+- 同じ志を持つ仲間とのネットワーキング
+- 副業としての活用機会
+
+## 🛠 技術スタック
+
+- Next.js 15.2.1
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Hero Icons
+
+## 🚀 セットアップ
+
+1. リポジトリのクローン:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repository-url]
+cd gurumen_lp
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 依存関係のインストール:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 開発サーバーの起動:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. ブラウザでアクセス:
+```
+http://localhost:3000
+```
 
-## Learn More
+## 📱 主な機能
 
-To learn more about Next.js, take a look at the following resources:
+- **ヒーローセクション**: プラットフォームの主要な価値提案を表示
+- **コンセプトセクション**: サービスの理念と目的を説明
+- **メリットセクション**: 参加することで得られる4つの主要なメリットを紹介
+- **料金プランセクション**: 3つの料金プランの比較と詳細
+- **活動内容セクション**: オンライン・オフラインでの具体的な活動内容
+- **成功事例セクション**: 実際のユーザーの成功体験を紹介
+- **お問い合わせセクション**: 問い合わせフォームと連絡先情報
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 デザイン特徴
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- レスポンシブデザイン
+- スムーズなアニメーション効果
+- モダンでクリーンなUI
+- 直感的なナビゲーション
 
-## Deploy on Vercel
+## 📝 コントリビューション
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. このリポジトリをフォーク
+2. 新しいブランチを作成 (`git checkout -b feature/improvement`)
+3. 変更をコミット (`git commit -am 'Add new feature'`)
+4. ブランチにプッシュ (`git push origin feature/improvement`)
+5. プルリクエストを作成
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
+
+## 👥 サポート
+
+ご質問やご相談がございましたら、以下の連絡先までお気軽にお問い合わせください：
+
+- Email: info@gurumen.com
+- Tel: 03-0000-0000（平日10:00-18:00）
