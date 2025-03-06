@@ -2,16 +2,12 @@
 
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { handleSubmit } from '@/app/actions';
 
 const animation = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
 };
-
-async function handleSubmit(formData: FormData) {
-  'use server';
-  // TODO: フォーム送信処理の実装
-}
 
 export const ContactSection = () => {
   return (
