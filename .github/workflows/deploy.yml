@@ -25,16 +25,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm install -g npm@latest
+          npm ci
       
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+        env:
+          CI: true
+          NEXT_TELEMETRY_DISABLED: 1
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
