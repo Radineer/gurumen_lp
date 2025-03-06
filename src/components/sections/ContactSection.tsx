@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
-import { handleSubmit } from '@/app/actions';
+import { FormEvent } from 'react';
 
 const animation = {
   hidden: { opacity: 0, y: 20 },
@@ -10,6 +10,21 @@ const animation = {
 };
 
 export const ContactSection = () => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    
+    // フォームデータの取得
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+
+    // TODO: ここでメール送信などの処理を実装
+    console.log('Form submitted:', { name, email, subject, message });
+    alert('お問い合わせを受け付けました。');
+  };
+
   return (
     <section className="py-section bg-brand-light" id="contact">
       <div className="container mx-auto px-4">
@@ -91,7 +106,7 @@ export const ContactSection = () => {
           >
             <h3 className="text-xl font-bold mb-6">お問い合わせフォーム</h3>
             
-            <form action={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
